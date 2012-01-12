@@ -3,7 +3,7 @@
 //  UIPartsCollection
 //
 //  Created by Keisuke Matsuo on 12/01/12.
-//  Copyright (c) 2012年 Keisuke Matsuo. All rights reserved.
+//  Copyright (c) 2012 Keisuke Matsuo. All rights reserved.
 //
 
 #import "MZDetailViewController.h"
@@ -18,6 +18,7 @@
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
 @synthesize masterPopoverController = _masterPopoverController;
+@synthesize infoView = _infoView;
 
 #pragma mark - Managing the detail item
 
@@ -57,6 +58,53 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    
+    InformationView *infoViewUp = [[InformationView alloc] initWithFrame:CGRectMake(20.0,
+                                                                                  40.0,
+                                                                                  120.0,
+                                                                                  120.0)];
+    infoViewUp.textLabel.text = @"Tap here! You can delete this!";
+    infoViewUp.pointer = CGPointMake(infoViewUp.frame.origin.x + 20.0,
+                                   infoViewUp.frame.origin.y - 20.0);
+
+    [self.view addSubview:infoViewUp];
+    
+    
+    InformationView *infoViewDown = [[InformationView alloc] initWithFrame:CGRectMake(180.0,
+                                                                                  40.0,
+                                                                                  120.0,
+                                                                                  120.0)];
+    infoViewDown.textLabel.text = @"Tap here! You can delete this!";
+    infoViewDown.tintColor = [UIColor blueColor];
+    infoViewDown.pointer = CGPointMake(infoViewDown.frame.origin.x + 20.0,
+                                       infoViewDown.frame.origin.y + infoViewDown.frame.size.height + 20.0);
+    
+    [self.view addSubview:infoViewDown];
+
+    InformationView *infoViewLeft = [[InformationView alloc] initWithFrame:CGRectMake(20.0,
+                                                                                  220.0,
+                                                                                  120.0,
+                                                                                  120.0)];
+    infoViewLeft.textLabel.text = @"Tap here! You can delete this!";
+    infoViewLeft.pointer = CGPointMake(infoViewLeft.frame.origin.x - 20.0,
+                                       infoViewLeft.frame.origin.y + 20.0);
+    
+    infoViewLeft.tintColor = [UIColor redColor];
+    [self.view addSubview:infoViewLeft];
+
+    InformationView *infoViewRight = [[InformationView alloc] initWithFrame:CGRectMake(180.0,
+                                                                                  220.0,
+                                                                                  120.0,
+                                                                                  120.0)];
+    infoViewRight.textLabel.text = @"Tap here! But you can't delete this!";
+    infoViewRight.textLabel.textColor = [UIColor blackColor];
+    infoViewRight.hideWhenTouch = NO;
+    infoViewRight.tintColor = [UIColor greenColor];
+    infoViewRight.pointer = CGPointMake(infoViewRight.frame.origin.x + infoViewRight.frame.size.width + 20.0,
+                                        infoViewRight.frame.origin.y + 20.0);
+    
+    [self.view addSubview:infoViewRight];
+
 }
 
 - (void)viewDidUnload
@@ -74,6 +122,8 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated

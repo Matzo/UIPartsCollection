@@ -22,6 +22,7 @@
 		F7FEF5D114BEED6D002F4980 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FEF5AC14BEED6D002F4980 /* Foundation.framework */; };
 		F7FEF5D914BEED6D002F4980 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7FEF5D714BEED6D002F4980 /* InfoPlist.strings */; };
 		F7FEF5DC14BEED6D002F4980 /* UIPartsCollectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FEF5DB14BEED6D002F4980 /* UIPartsCollectionTests.m */; };
+		F7FEF5E714BEEFF3002F4980 /* InformationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FEF5E614BEEFF3002F4980 /* InformationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,24 +40,26 @@
 		F7FEF5AA14BEED6D002F4980 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F7FEF5AC14BEED6D002F4980 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F7FEF5AE14BEED6D002F4980 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F7FEF5B214BEED6D002F4980 /* UIPartsCollection-Info.plist */ = {isa = PBXFileReference; path = "UIPartsCollection-Info.plist"; sourceTree = "<group>"; };
+		F7FEF5B214BEED6D002F4980 /* UIPartsCollection-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIPartsCollection-Info.plist"; sourceTree = "<group>"; };
 		F7FEF5B414BEED6D002F4980 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F7FEF5B614BEED6D002F4980 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F7FEF5B814BEED6D002F4980 /* UIPartsCollection-Prefix.pch */ = {isa = PBXFileReference; path = "UIPartsCollection-Prefix.pch"; sourceTree = "<group>"; };
-		F7FEF5B914BEED6D002F4980 /* MZAppDelegate.h */ = {isa = PBXFileReference; path = MZAppDelegate.h; sourceTree = "<group>"; };
+		F7FEF5B814BEED6D002F4980 /* UIPartsCollection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIPartsCollection-Prefix.pch"; sourceTree = "<group>"; };
+		F7FEF5B914BEED6D002F4980 /* MZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZAppDelegate.h; sourceTree = "<group>"; };
 		F7FEF5BA14BEED6D002F4980 /* MZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZAppDelegate.m; sourceTree = "<group>"; };
 		F7FEF5BD14BEED6D002F4980 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		F7FEF5C014BEED6D002F4980 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		F7FEF5C214BEED6D002F4980 /* MZMasterViewController.h */ = {isa = PBXFileReference; path = MZMasterViewController.h; sourceTree = "<group>"; };
+		F7FEF5C214BEED6D002F4980 /* MZMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZMasterViewController.h; sourceTree = "<group>"; };
 		F7FEF5C314BEED6D002F4980 /* MZMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZMasterViewController.m; sourceTree = "<group>"; };
-		F7FEF5C514BEED6D002F4980 /* MZDetailViewController.h */ = {isa = PBXFileReference; path = MZDetailViewController.h; sourceTree = "<group>"; };
+		F7FEF5C514BEED6D002F4980 /* MZDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZDetailViewController.h; sourceTree = "<group>"; };
 		F7FEF5C614BEED6D002F4980 /* MZDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZDetailViewController.m; sourceTree = "<group>"; };
 		F7FEF5CD14BEED6D002F4980 /* UIPartsCollectionTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIPartsCollectionTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FEF5CE14BEED6D002F4980 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		F7FEF5D614BEED6D002F4980 /* UIPartsCollectionTests-Info.plist */ = {isa = PBXFileReference; path = "UIPartsCollectionTests-Info.plist"; sourceTree = "<group>"; };
+		F7FEF5D614BEED6D002F4980 /* UIPartsCollectionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIPartsCollectionTests-Info.plist"; sourceTree = "<group>"; };
 		F7FEF5D814BEED6D002F4980 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F7FEF5DA14BEED6D002F4980 /* UIPartsCollectionTests.h */ = {isa = PBXFileReference; path = UIPartsCollectionTests.h; sourceTree = "<group>"; };
+		F7FEF5DA14BEED6D002F4980 /* UIPartsCollectionTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIPartsCollectionTests.h; sourceTree = "<group>"; };
 		F7FEF5DB14BEED6D002F4980 /* UIPartsCollectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIPartsCollectionTests.m; sourceTree = "<group>"; };
+		F7FEF5E514BEEFF3002F4980 /* InformationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InformationView.h; path = UIPartsCollectionModules/InformationView.h; sourceTree = SOURCE_ROOT; };
+		F7FEF5E614BEEFF3002F4980 /* InformationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InformationView.m; path = UIPartsCollectionModules/InformationView.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,7 @@
 				F7FEF5C514BEED6D002F4980 /* MZDetailViewController.h */,
 				F7FEF5C614BEED6D002F4980 /* MZDetailViewController.m */,
 				F7FEF5B114BEED6D002F4980 /* Supporting Files */,
+				F7FEF5E814BF1B80002F4980 /* Modules */,
 			);
 			path = UIPartsCollection;
 			sourceTree = "<group>";
@@ -157,6 +161,15 @@
 				F7FEF5D714BEED6D002F4980 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7FEF5E814BF1B80002F4980 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F7FEF5E514BEEFF3002F4980 /* InformationView.h */,
+				F7FEF5E614BEEFF3002F4980 /* InformationView.m */,
+			);
+			name = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +284,7 @@
 				F7FEF5BB14BEED6D002F4980 /* MZAppDelegate.m in Sources */,
 				F7FEF5C414BEED6D002F4980 /* MZMasterViewController.m in Sources */,
 				F7FEF5C714BEED6D002F4980 /* MZDetailViewController.m in Sources */,
+				F7FEF5E714BEEFF3002F4980 /* InformationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
